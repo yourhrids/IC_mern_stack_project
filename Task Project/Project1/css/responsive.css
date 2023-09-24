@@ -1,0 +1,268 @@
+@media screen and (max-width: 1200px) {
+  /* HEADER Start */
+  .header {
+    width: 900px;
+  }
+
+  /* HEADER END */
+
+  /* HOME Start */
+  .container.home-section {
+    width: 1000px;
+    height: 90vh;
+  }
+  .home-right .home-image img {
+    right: 0px;
+    height: 700px;
+    max-width: 600px;
+  }
+  /* HOME END */
+
+  /* ABOUT Start */
+  .about-left {
+    width: 40%;
+  }
+
+  .about-right {
+    width: 60%;
+  }
+  /* ABOUT END */
+
+  /* COUNTER Start */
+
+  /* COUNTER END */
+
+  /* TESTIMONIAL Start */
+
+  /* TESTIMONIAL END */
+
+  /* NEWSLETTER Start */
+
+  /* NEWSLETTER END */
+
+  /* FOOTER Start */
+
+  /* FOOTER END */
+}
+
+@media screen and (max-width: 991px) {
+  /* HEADER Start */
+  .header {
+    width: 750px;
+  }
+  /* HEADER END */
+
+  /* HOME Start */
+  .container.home-section {
+    width: 800px;
+    height: 80vh;
+  }
+
+  .home-right .home-image img {
+    right: 0px;
+    height: 500px;
+  }
+  .home-content h1 {
+    font-size: 50px;
+    width: 450px;
+  }
+  .home-left .home-content h4 {
+    width: 400px;
+  }
+  .home-left {
+    position: relative;
+    z-index: 2;
+  }
+  .home-left .home-content h4 {
+    margin-block: 10px;
+  }
+  .home-bottom-info {
+    margin-block-start: 10px;
+  }
+  .home-bottom-info .home-brand-wrapper {
+    margin-block-start: 0;
+  }
+  /* HOME END */
+
+  /* ABOUT Start */
+  .container.about-section {
+    flex-direction: column;
+}
+  .about-left,
+  .about-right {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-right {
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 30px;
+  }
+  /* ABOUT END */
+
+  /* COUNTER Start */
+
+  /* COUNTER END */
+
+  /* TESTIMONIAL Start */
+  .testimonial-item {
+    
+    flex-direction: column;
+    
+}
+  /* TESTIMONIAL END */
+
+  /* NEWSLETTER Start */
+  .newsletter-left {
+    margin-left: 50px;
+   
+}
+  /* NEWSLETTER END */
+
+  /* FOOTER Start */
+
+  /* FOOTER END */
+}
+
+@media screen and (max-width: 767px) {
+  /* HEADER Start */
+
+  .header {
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+  .header .serach-bar i {
+    display: none;
+  }
+
+  .header .logo img {
+    max-width: 120px;
+    margin-left: 15px;
+    padding-top: 10px;
+  }
+  .header .mainmenu ul {
+    gap: 20px;
+    padding-block-end: 0;
+  }
+
+  /* HEADER END */
+
+  /* HOME Start */
+  .home-content h1 {
+    font-size: 30px;
+    width: 350px;
+  }
+  .home-left .home-content h4 {
+    font-size: 16px;
+    width: 300px;
+  }
+  .home-bottom-info h5 {
+    font-size: 14px;
+  }
+  .home-left .home-content .home-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .container.home-section {
+    width: 550px;
+    height: 70vh;
+    margin: 0 20px;
+  }
+  /* HOME END */
+
+  /* ABOUT Start */
+  .about-left {
+    overflow: hidden;
+}
+
+.about-left-content h2 {
+    font-size: 30px;
+}
+
+.about-left-content p {
+    font-size: 18px;
+}
+  /* ABOUT END */
+
+  /* COUNTER Start */
+  .counter-box {
+    flex-direction: column;
+    gap: 20px;
+}
+.counter-box .box-item:nth-child(2) {
+  border: none;
+  
+}
+  /* COUNTER END */
+
+  /* TESTIMONIAL Start */
+  .testimonial-item {
+    
+    flex-direction: column;
+    
+}
+
+  /* TESTIMONIAL END */
+
+  /* NEWSLETTER Start */
+  .container.newsletter-section {
+    
+    flex-direction: column;
+   
+}
+.newsletter-left {
+ 
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+  /* NEWSLETTER END */
+
+  /* FOOTER Start */
+  .footer-bg-top {
+    padding: 20px 50px;
+}
+  .single-footer-menu {
+    padding: 0;
+}
+  /* FOOTER END */
+}
+
+@media screen and (max-width: 451px) {
+  /* HEADER Start */
+
+  /* HEADER END */
+
+  /* HOME Start */
+  .container.home-section {
+    width: 400px;
+  }
+  /* HOME END */
+
+  /* ABOUT Start */
+
+  /* ABOUT END */
+
+  /* COUNTER Start */
+
+  /* COUNTER END */
+
+  /* TESTIMONIAL Start */
+
+  /* TESTIMONIAL END */
+
+  /* NEWSLETTER Start */
+
+  /* NEWSLETTER END */
+
+  /* FOOTER Start */
+
+  /* FOOTER END */
+}
