@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'SutonnyMj';
+    src: url(/fonts/sutonnymj.ttf);
+}
+body{
+    font-family: 'SutonnyMj';
+}
+.section-one .logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #676CF2;
+    cursor: pointer;
+}
+
+.section-two .button {
+    display: flex;
+    align-items: center;
+}
+
+.first-one a {
+    color: #676CF2;
+    text-decoration: none;
+    font-size: 14px;
+    background: #F0F5FE;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.first-one i {
+    font-size: 18px;
+    margin-inline-start: 5px;
+}
+
+.second-one a {
+    text-decoration: none;
+    background: #676CF2;
+    color: #fff;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-inline-start: 20px;
+    cursor: pointer;
+}
+
+.second-one i {
+    margin-inline-start: 5px;
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 80px;
+    padding-block: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.about-sec {
+    padding-inline: 80px;
+    background: #F9FAFB;
+}
+
+.text-content {
+    max-width: 500px;
+    height: auto;
+}
+
+.text-content h3 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    padding-block-start: 50px;
+}
+
+.single-about-item {
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 25px;
+    margin-inline-start: 0;
+    padding: 20px 30px;
+    border-radius: 4px;
+    transition: .3s;
+    background: #fff;
+    border-color: #ddd;
+    max-width: 27%;
+}
+
+.single-about-item:hover {
+    box-shadow: 0 10px 20px #ccc;
+    transform: translateY(-5px);
+}
+
+.single-about-item p {
+    color: #667085;
+    font-size: 14px;
+}
+
+.single-about-item h3 {
+    margin: 0;
+}
+
+.single-about-item .link {width: 100%;display: flex;align-items: center;justify-content: space-between;color: #4349F0;transition: .3s;}
+
+.single-about-item a {
+    text-decoration: none;
+}
+
+
+.single-about-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
