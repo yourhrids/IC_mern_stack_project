@@ -1,0 +1,413 @@
+@media (max-width: 1200px) {
+  /* HEADER CSS START */
+  .header {
+    padding: 20px 50px;
+  }
+  /* HEADER CSS END */
+
+  /* HOME CSS START */
+  .home-sec1 {
+    padding-inline: 40px;
+  }
+  .left-content h1 {
+    font-size: 64px;
+  }
+  .home-sec2 {
+    margin: 40px;
+  }
+  /* HOME items div */
+  /* HOME CSS END */
+
+  /* SECTION 1-2-3 START */
+  /* SECTION 1-2-3 END */
+
+  /* BRAND Section START */
+  /* BRAND Section END */
+
+  /* TESTIMONIAL SECTION START */
+  /* TESTIMONIAL SECTION END */
+
+  /* NEWSLETTER START */
+  /* NEWSLETTER END */
+
+  /* FOOTER START */
+  .footer-section {
+    padding-inline: 50px;
+  }
+  /* FOOTER END */
+}
+
+@media (max-width: 991px) {
+  .padding-long {
+    padding-block-start: 140px;
+  }
+  /* HEADER CSS START */
+
+  /* HEADER CSS END */
+
+  /* HOME CSS START */
+  .left-content h1 {
+    font-size: 45px;
+  }
+  .left-content h4 {
+    font-size: 18px;
+  }
+  .button-pair .home-btn-2 {
+    margin-inline-start: 10px;
+  }
+  .home-sec2 {
+    padding: 40px 50px;
+  }
+  /* HOME items div */
+  /* HOME CSS END */
+
+  /* SECTION 1-2-3 START */
+  .right-section h1 {
+    font-size: 46px;
+  }
+  .right-section {
+    gap: 15px;
+  }
+  .section .left-section,
+  .section .right-section {
+    padding-inline: 20px;
+  }
+  .section {
+    padding-inline: 20px;
+  }
+  /* SECTION 1-2-3 END */
+
+  /* BRAND Section START */
+  .single-brand-image img {
+    max-width: 220px;
+    height: 40px;
+   
+}
+  /* BRAND Section END */
+
+  /* TESTIMONIAL SECTION START */
+  /* TESTIMONIAL SECTION END */
+
+  /* NEWSLETTER START */
+  /* NEWSLETTER END */
+
+  /* FOOTER START */
+  .footer-section {
+    flex-direction: column;
+    padding-inline: 50px;
+  }
+
+  .left-footer,
+  .right-footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-footer {
+    justify-content: center;
+    margin-block-start: 30px;
+  }
+
+  .left-footer h5 {
+    margin: 0 auto;
+    margin-block-start: 20px;
+  }
+
+  .footer-social-icons {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  /* FOOTER END */
+}
+
+@media (max-width: 767px) {
+  /* Custom CSS */
+  p {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .padding-short {
+    padding-block-start: 80px;
+  }
+  .padding-long {
+    padding-block-start: 150px;
+  }
+  /* HEADER CSS START */
+  .close-button,
+  .hamburg-menu {
+    display: inherit;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    background: var(--blue);
+    transition: 500ms ease-in-out;
+  }
+  /* JS active class call here */
+  .navbar.active {
+    left: 0;
+  }
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 37px;
+    font-size: 37px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .hamburg-menu {
+    font-size: 32px;
+    color: var(--black);
+    cursor: pointer;
+  }
+
+  .close-button:hover {
+    transform: scale(1.2);
+  }
+
+  .mainmenu {
+    flex-direction: column;
+    margin-block-start: 80px;
+    gap: 20px;
+  }
+  .mainmenu li a {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  .mainmenu li a:after {
+    background: #fff;
+  }
+  /* HEADER CSS END */
+
+  /* HOME CSS START */
+  .home-sec1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-content {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .left-content h4 {
+    max-width: 100%;
+  }
+
+  .button-pair {
+    margin-block-start: 20px;
+  }
+
+  .left-side,
+  .right-side {
+    margin-block-start: 50px;
+  }
+  /* HOME items div */
+  .single-home-sec2-item {
+    width: 100%;
+    max-width: 400px;
+    margin-inline: 20px;
+    margin-block: 20px;
+  }
+  /* HOME CSS END */
+
+  /* SECTION 1-2-3 START */
+  .section {
+    flex-direction: column-reverse;
+  }
+  .right-section h1 {
+    font-size: 36px;
+  }
+  .section .left-section,
+  .section .right-section {
+    width: 100%;
+  }
+
+  .section .left-section {
+    text-align: center;
+    margin-block-start: 50px;
+  }
+
+  .section .right-section {
+    margin-block-start: 50px;
+  }
+  /* SECTION 1-2-3 END */
+
+  /* BRAND Section START */
+  .single-brand-image {
+    width: 50%;
+    text-align: center;
+  }
+  .single-brand-image img {
+    max-width: 180px;
+    height: 40px;
+    margin: 20px;
+  }
+  /* BRAND Section END */
+
+  /* TESTIMONIAL SECTION START */
+  .slide-col {
+    
+    padding: 20px;
+    margin-inline: 35px;
+}
+.author-meta h5 {
+  margin-block-start: 100px;
+}
+.quotes-absulate i {
+  font-size: 120px;
+}
+  /* TESTIMONIAL SECTION END */
+
+  /* NEWSLETTER START */
+  .newsletter-form {
+    width: 80%;
+  }
+  .newsletter-wrapper h2 {
+    font-size: 30px;
+  }
+
+  .newsletter-wrapper {
+    padding-inline: 40px;
+  }
+
+  .newsletter-form form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-form .email-area {
+    margin: 0;
+  }
+
+  .newsletter-form form input[type="submit"] {
+    width: 50%;
+  }
+
+  .newsletter-form form input[type="email"]::placeholder {
+    font-size: 14px;
+  }
+  /* NEWSLETTER END */
+
+  /* FOOTER START */
+  .right-footer {
+    flex-direction: column;
+    gap: 20px;
+}
+  /* FOOTER END */
+}
+@media (max-width: 506px) {
+  .newsletter-form .email-area {
+    width: 100%;
+  }
+  .newsletter-form form input[type="submit"] {
+    width: 100%;
+  }
+
+  /* testimonial */
+  .quotes-absulate i {
+    font-size: 100px;
+    top: 20px;
+}
+.slide-col .author-meta img {
+  width: 70px;
+  height: 70px;
+}
+}
+@media (max-width: 481px) {
+  /* HEADER CSS START */
+  .mainmenu li a {
+    font-size: 40px;
+  }
+
+  .mainmenu {
+    margin-block-start: 100px;
+    gap: 40px;
+  }
+  /* HEADER CSS END */
+
+  /* HOME CSS START */
+  .button-pair .home-btn-2 {
+    margin: 0;
+  }
+
+  .button-pair {
+    display: grid;
+    gap: 20px;
+  }
+
+  .left-side {
+    margin: 0;
+  }
+  /* HOME items div */
+  .single-home-sec2-item {
+    margin: 0;
+    padding: 0;
+    margin-block: 20px;
+  }
+  /* HOME CSS END */
+
+  /* SECTION 1-2-3 START */
+  .section .left-section,
+  .section .right-section {
+    padding-inline: 40px;
+  }
+  /* SECTION 1-2-3 END */
+
+  /* BRAND Section START */
+  .single-brand-image {
+    width: 100%;
+    text-align: center;
+  }
+  .single-brand-image img {
+    margin: 30px 0;
+  }
+  /* BRAND Section END */
+
+  /* TESTIMONIAL SECTION START */
+  .quotes-absulate i {
+    font-size: 80px;
+    
+}
+.brand-content h2 {
+  font-size: 24px;
+}
+  /* TESTIMONIAL SECTION END */
+
+  /* NEWSLETTER START */
+  /* NEWSLETTER END */
+
+  /* FOOTER START */
+  /* FOOTER END */
+}
+
+@media (max-width: 380px) {
+  .newsletter-form .email-area {
+    padding-block: 10px;
+    padding-inline-start: 10px;
+  }
+
+  .quotes-absulate i {
+    font-size: 80px;
+    top: 25px;
+    left: 30px;
+}
+}
