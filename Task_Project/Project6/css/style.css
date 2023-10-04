@@ -1,0 +1,273 @@
+/* ============== GLobal CSS ============== */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* For scroll smooth (means click one menu and go its area by scrollling) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== Custom scroll bar ========== */
+
+::-webkit-scrollbar {
+  width: 0.5rem; /* 1rem = 16pixels So, .25rem = 4pixels*/
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(84, 184, 255, 1);
+}
+
+/* ============== Custom CSS ==============*/
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* ============ HEADER Start ============ */
+.hamburg-menu,
+.close-button {
+  display: none;
+}
+.header {
+  max-width: 1370px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mainmenu {
+  gap: 150px;
+}
+
+.button-pair {
+  gap: 40px;
+}
+
+.btn {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.primary.btn {
+  background: rgba(84, 184, 255, 1);
+  color: #fff;
+  display: flex;
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logo img {
+  max-width: 180px;
+  cursor: pointer;
+  height: auto;
+}
+
+.mainmenu ul {
+  gap: 30px;
+}
+
+.mainmenu li a {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #000;
+}
+/* ============ HEADER End ============ */
+#home {
+  position: relative;
+  z-index: 1;
+}
+
+.home-sec {
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  padding-block-start: 80px;
+  padding-block-end: 50px;
+}
+
+.girl-image img {
+  height: 600px;
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+}
+
+.right-side {
+  position: relative;
+  z-index: 1;
+}
+
+.layer1 img {
+  position: absolute;
+  z-index: 5;
+  top: 100px;
+  left: 20px;
+  max-width: 100px;
+  height: auto;
+}
+.layer2 img {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  left: 120px;
+  max-width: 80px;
+  height: auto;
+}
+.layer3 img {
+  position: absolute;
+  z-index: 5;
+  top: -50px;
+  left: 45%;
+  max-width: 80px;
+  height: auto;
+}
+
+.layer4 img {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 100px;
+  max-width: 80px;
+  height: auto;
+}
+.layer5 img {
+  position: absolute;
+  z-index: 5;
+  top: 140px;
+  right: 30px;
+  max-width: 80px;
+  height: auto;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-side h5 {
+  color: #2f2b71;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.7px;
+}
+
+.left-side h1 {
+  color: #5f596e;
+  font-family: Poppins;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116.5%; /* 81.55px */
+}
+
+.left-side h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 156%; /* 31.2px */
+  letter-spacing: 1px;
+}
+
+.home.btn {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 104%; /* 18.72px */
+  letter-spacing: 1.89px;
+  background: linear-gradient(90deg, #54b8ff -1.36%, #54b8ff 105.62%);
+  box-shadow: 0px 0px 30px 0px rgba(65, 135, 123, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 200px;
+  gap: 10px;
+}
+
+.absulate-image-one img {
+  position: absolute;
+  top: 0;
+  max-width: 80px;
+}
+.absulate-image-two img {
+  position: absolute;
+  bottom: 0;
+  max-width: 80px;
+}
+
+.absulate-image-three img {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  max-width: 100px;
+}
+.absulate-image-four img {
+  position: absolute;
+  right: 0;
+  bottom: 120px;
+  max-width: 60px;
+}
+.girl-image img {
+  max-width: 600px;
+}
+
+.right-side {
+  padding-inline-start: 20px;
+}
+
+.left-side {
+  padding-inline-end: 50px;
+}
+.bullet-image img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}

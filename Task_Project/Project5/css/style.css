@@ -1,0 +1,264 @@
+/* ============== GLobal CSS ============== */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+input:focus {
+  box-shadow: none;
+  outline: none;
+}
+/* ============== Variable Define ============== */
+:root {
+  --primary-color: rgba(6, 193, 103, 1);
+  --text-color: rgba(29, 29, 31, 1);
+}
+
+/* For scroll smooth (means click one menu and go its area by scrollling) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== Custom scroll bar ========== */
+
+::-webkit-scrollbar {
+  width: 0.5rem; /* 1rem = 16pixels So, .25rem = 4pixels*/
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* ============== Custom CSS ==============*/
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: var(--text-color);
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+h2 {
+  color: var(--text-color);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+h3 {
+  color: var(--text-color);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+h4 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+h5 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-color);
+}
+h6 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-color);
+}
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-color);
+}
+
+/* ============ HEADER Start ============ */
+.hamburg-menu,
+.close-button {
+  display: none;
+}
+.header {
+  width: 100%;
+  padding: 20px 180px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.header.active {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.logo img {
+  max-width: 110px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(0.95);
+}
+
+.mainmenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmenu li a {
+  display: block;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.mainmenu li a:hover {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.mainmenu ul:hover li {
+  filter: blur(2px);
+}
+
+.mainmenu ul li:hover {
+  filter: blur(0px);
+}
+/* ============ HEADER End ============ */
+
+/*============ Home Section Start============ */
+#home {
+  background-color: rgba(243, 252, 247, 1);
+}
+.home-sec {
+  justify-content: space-between;
+  height: 80vh;
+  padding-block: 200px;
+}
+
+.girl-image img {
+  max-width: 450px;
+  height: 600px;
+}
+
+.text-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  width: 200px;
+  background: var(--primary-color);
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: all 0.3s;
+  border: 2px solid var(--primary-color);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.right-home {
+  position: relative;
+  z-index: 1;
+  margin-block-start: 250px;
+}
+
+.bullet-home-image img {
+  position: absolute;
+  bottom: 0;
+  right: -15%;
+}
+
+.quality-ticker {
+  position: absolute;
+  top: 30%;
+  right: -25px;
+  z-index: 5;
+  background: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  gap: 15px;
+}
+
+.rating-home {
+  gap: 15px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 12px 12px;
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  z-index: 5;
+}
+
+.rating-home span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.rating-home .rating li i {
+  color: var(--primary-color);
+}
+
+.rating ul {
+  gap: 5px;
+}
+.left-home {
+  margin-inline-end: 20px;
+}
+
+.right-home {
+  margin-inline-start: 20px;
+}
+/*============ Home Section End============ */
