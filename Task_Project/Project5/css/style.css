@@ -49,6 +49,9 @@ html {
 }
 
 /* ============== Custom CSS ==============*/
+.padding-50 {
+  padding: 50px;
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -262,3 +265,54 @@ p {
   margin-inline-start: 20px;
 }
 /*============ Home Section End============ */
+
+/* ========= Brand Section Start */
+.brand {
+  gap: 50px;
+  margin-block-start: 50px;
+  cursor: pointer;
+}
+
+/* ========= Brand Section end */
+
+/* =============== Features Section Start ================= */
+.border-features {
+  padding-block: 40px;
+  border-top: 1.5px solid #7070707a;
+  border-bottom: 1.5px solid #7070707a;
+}
+
+.features {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-features-item {
+  gap: 20px;
+  height: 60px;
+  width: 220px;
+}
+
+.features-icon-image img {
+  max-width: 60px;
+  height: auto;
+  width: 100%;
+}
+
+.features-content h6 {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.features-content p {
+  color: #1d1d1f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-block-start: 5px;
+}
+/* =============== Features Section end ================= */
