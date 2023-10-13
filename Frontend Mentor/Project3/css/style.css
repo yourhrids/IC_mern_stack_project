@@ -1,0 +1,210 @@
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Paleorange: hsl(25, 100%, 94%);
+
+  --dar-kblue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+/* ===================   Custom CSS   ================= */
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hamburg-menu,
+.close-button {
+  display: none;
+}
+.small-image-col img {
+  height: 100px;
+  width: 100px;
+  border-radius: 1rem;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.small-image-group {
+  display: flex;
+  align-items: center;
+  margin-block-start: 20px;
+  gap: 35px;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  padding: 60px;
+}
+
+.single-pro-image img {
+  height: 500px;
+  width: 500px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-side {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.right-side h4 {
+  text-transform: uppercase;
+  color: var(--Orange);
+}
+
+.right-side h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.right-side p {
+  max-width: 600px;
+  color: var(--Dark-grayish-blue);
+}
+
+.taka h2 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.taka span {
+  font-size: 0.75rem;
+  background: var(--Paleorange);
+  height: 20px;
+  width: 30px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 0.25rem;
+  color: var(--Orange);
+  margin-inline-start: 10px;
+}
+
+.cart-area .first {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.add-cart {
+  height: 50px;
+  width: 280px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Orange);
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.first h1 {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 50px;
+  background: var(--Light-grayish-blue);
+  border-radius: 0.25rem;
+}
+
+.first span {
+  cursor: pointer;
+  color: var(--Orange);
+  margin-inline: 30px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-inline-start: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--Grayish-blue);
+  padding-block-end: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar li a {
+  color: var(--Dark-grayish-blue);
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  color: var(--Orange);
+}
+
+.logo img {
+  cursor: pointer;
+}
+
+.author img {
+  height: 60px;
+  width: 60px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.author img:hover {
+  border-color: var(--Orange);
+}
