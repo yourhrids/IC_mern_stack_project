@@ -31,12 +31,12 @@ const blurHeader = () => {
 };
 window.addEventListener("scroll", blurHeader);
 
-// scroll reveal animation js
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2000,
-  delay: 400,
-  // reset:true. //amnimation true
-});
-sr.reveal(".features, .footer , .form , .call-to-action , .home , .header");
+// // scroll reveal animation js
+// const sr = ScrollReveal({
+//   origin: "top",
+//   distance: "60px",
+//   duration: 2000,
+//   delay: 400,
+//   // reset:true. //amnimation true
+// });
+// sr.reveal(".features, .footer , .form , .call-to-action , .home , .header");
