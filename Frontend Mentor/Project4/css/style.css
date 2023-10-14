@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  background-color: var(--Light-Grayish-Cyan);
+}
+.padding-20 {
+  padding: 10px;
+}
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+:root {
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+  --Light-Grayish-Cyan: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan2: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+}
+.brand-image img {
+  max-width: 85px;
+  height: auto;
+}
+
+.single-dashboard-items {
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.content p {
+  font-weight: 700;
+}
+
+.content .para2 {
+  font-weight: 500;
+}
+.single-dashboard-items:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 5px;
+  content: "";
+  background: #000;
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.single-dashboard-items:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.left-content {
+  gap: 30px;
+}
+
+.content h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.content p {
+  font-size: 16px;
+  color: var(--Desaturated-Dark-Cyan);
+  margin: 10px 0;
+}
+
+.content .para2 {
+  color: #444;
+}
+
+.content .para2 span {
+  padding: 3px;
+}
+
+.first {
+  display: inline-block;
+  height: 25px;
+  width: 60px;
+  line-height: 25px;
+  text-align: center;
+  background: var(--Desaturated-Dark-Cyan);
+  color: #fff;
+  border-radius: 50px;
+  margin-inline-start: 10px;
+  cursor: pointer;
+}
+
+.second {
+  height: 25px;
+  width: 90px;
+  display: inline-block;
+  margin-inline-start: 10px;
+  line-height: 25px;
+  text-align: center;
+  background: #000;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.language-skill ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.language-skill li a {
+  text-decoration: none;
+  color: var(--Desaturated-Dark-Cyan);
+  font-size: 18px;
+  padding: 5px 5px;
+  border-radius: 0.25rem;
+  background: #fff;
+}
