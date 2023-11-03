@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #212121;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: #fa3700;
+  height: 60px;
+  line-height: 60px;
+  padding-inline: 2rem;
+}
+
+.nav-list {
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar .nav-item .nav-link {
+  color: #fff;
+}
+
+.nav-bar .nav-item {
+  position: relative;
+}
+/* SUB MENU ONE */
+.nav-bar .nav-item .sub-list {
+  position: absolute;
+  left: -10px;
+  top: 80px;
+  width: 160px;
+  background-color: #fa3700;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-bar .nav-item .sub-item {
+  position: relative;
+  width: 100%;
+}
+
+.nav-bar .nav-item .sub-item .sub-links {
+  display: block;
+  padding-left: 10px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.nav-bar .nav-item .sub-item .sub-links:hover {
+  background: #000;
+}
+
+.nav-bar .nav-item:hover .sub-list {
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+
+/* SUB MENU TWO */
+.nav-bar .nav-item .sub-item .sub-list-2 {
+  position: absolute;
+  left: 160px;
+  top: 0;
+  width: 160px;
+  background-color: #fa3700;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.nav-bar .nav-item .sub-item .sub-list-2 .sub-link-2 {
+  display: block;
+  padding-left: 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.nav-bar .nav-item .sub-item .sub-list-2 .sub-link-2:hover {
+  background: #000;
+}
+
+.nav-bar .nav-item .sub-item:hover .sub-list-2 {
+  opacity: 1;
+  visibility: visible;
+}

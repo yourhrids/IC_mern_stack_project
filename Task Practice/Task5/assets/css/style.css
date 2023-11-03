@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+input {
+  border: navajowhite;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.section-bg {
+  background-image: url(../bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-bg {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background: rgba(189, 189, 189, 0.23);
+  box-shadow: 0 8px 32px 0 rgba(14, 15, 18, 0.24);
+  backdrop-filter: blur(1.85px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 50px 30px;
+}
+
+.heading-title {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  margin-block-end: 20px;
+}
+
+.single-input {
+  background: rgba(189, 189, 189, 0.29);
+  box-shadow: 0 8px 32px 0 rgba(14, 15, 18, 0.32);
+  backdrop-filter: blur(4.35px);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 20px;
+}
+
+.single-input i {
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-wrapper span {
+  display: block;
+  text-align: center;
+  color: #ffff0075;
+  margin-block-start: 7px;
+}
+
+.login {
+  display: flex;
+  width: 100%;
+  background: #919398;
+  border: none;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.social-links {
+  justify-content: space-between;
+  margin-block-start: 10px;
+}
+
+.social-links a {
+  background: #8f9196;
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #fff;
+}
