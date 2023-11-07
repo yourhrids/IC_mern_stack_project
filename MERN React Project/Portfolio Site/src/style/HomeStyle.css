@@ -1,0 +1,165 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.margin-top {
+  margin-block-start: 70px;
+}
+
+.section-padding {
+  padding-block: 130px;
+  background-color: var(--BG-Shade);
+}
+
+.home-banner img {
+  max-width: 620px;
+}
+
+.home__right-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home__left-content {
+  margin-block-start: 60px;
+}
+
+.text__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text__content span {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--Heading-color);
+}
+
+.heading-one span {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--Primary);
+  font-size: 48px;
+}
+
+.description {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--Body);
+}
+
+.getIn__btn.btn {
+  width: 200px;
+  margin-block-start: 20px;
+  background: var(--Primary);
+  border-color: var(--Primary);
+  font-size: 20px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.heading-one {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  color: #000;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.getIn__btn:hover {
+  background: transparent;
+  color: var(--Primary);
+  transform: translateY(-5px);
+}
+.home__wrapper {
+  padding-inline: 20px;
+}
+@media (max-width: 1200px) {
+  .home-banner img {
+    max-width: 480px;
+  }
+  .heading-one span {
+    font-size: 42px;
+  }
+  .heading-one {
+    font-size: 42px;
+  }
+  .description {
+    font-size: 22px;
+  }
+  .getIn__btn.btn {
+    margin-block-start: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .description {
+    max-width: 350px;
+    font-size: 18px;
+  }
+
+  .heading-one,
+  .heading-one span {
+    font-size: 32px;
+    max-width: 350px;
+  }
+
+  .home-banner img {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .description {
+    max-width: 100%;
+  }
+
+  .heading-one,
+  .heading-one span {
+    max-width: 100%;
+  }
+  .section-padding {
+    padding-block: 30px;
+  }
+  .text__content {
+    text-align: center;
+  }
+
+  .btn.getIn__btn {
+    margin: 0 auto;
+  }
+
+  .home__right-content {
+    justify-content: center;
+    margin-block-start: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading-one,
+  .heading-one span {
+    font-size: 24px;
+  }
+  .home-banner img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .home-banner img {
+    max-width: 250px;
+  }
+  .heading-one,
+  .heading-one span {
+    font-size: 20px;
+  }
+}
