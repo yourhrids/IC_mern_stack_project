@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #bmi-form {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bmi-form">
+        <h2>BMI Calculator</h2>
+        <label for="weight">Weight (kg): </label>
+        <input type="number" id="weight" placeholder="Enter your weight" required>
+        <br>
+        <label for="height">Height (m): </label>
+        <input type="number" id="height" placeholder="Enter your height" required>
+        <br>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <br>
+        <h3>Result:</h3>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateBMI() {
+            var weight = parseFloat(document.getElementById('weight').value);
+            var height = parseFloat(document.getElementById('height').value);
+
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                alert('Please enter valid weight and height values.');
+                return;
+            }
+
+            var bmi = weight / (height * height);
+            var result = 'Your BMI is ' + bmi.toFixed(2);
+
+            if (bmi < 18.5) {
+                result += 'You are underweight.';
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                result += 'You have a normal weight.';
+            } else if (bmi >= 25 && bmi < 29.9) {
+                result += 'You are overweight.';
+            } else {
+                result += 'You are obese.';
+            }
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+
+</body>
+
+</html>
