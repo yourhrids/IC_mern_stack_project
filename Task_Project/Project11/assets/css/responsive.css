@@ -5,6 +5,18 @@
   .home__wrapper {
     height: 80vh;
   }
+  .navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler {
+    border: none !important ;
+    font-size: 28px;
+    color: #000;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 767px) {
